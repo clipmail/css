@@ -241,7 +241,7 @@ function copyToClipboard(element) {
     $temp.val($(element).text()).select();
     document.execCommand("copy");
     $temp.remove();
-    notifyUser("EMail ID copied to clipboard");
+    alert("Email Has Been Copied");
 }
 
 function notifyUser(message, sendPush = false) {
